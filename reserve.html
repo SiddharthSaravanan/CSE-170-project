@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reserve Equipment</title>
+<link rel="stylesheet" href="reserve.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="reserve.js"></script>
+</head>
+<body>
+
+
+  <div class="topnav">
+    <a class="active" href="./home.html"><img src="logo.png" width="66.5"></a>
+    <a class="active" href="./home.html">Thor <br> Fitness</a>
+    <div class="hide-on-med-and-down">
+      <a href="./reserve.html">Manage <br>Reservations </a>
+      <a href="./home.html">Merchandise<br> Catalogue</a>
+      <a href="./home.html">My <br>Orders</a>
+      <a href="./home.html">My <br>Profile</a>
+    </div>
+    <div class="right hide-on-large-only">
+      <a href="./home.html"><i class="material-icons" style="font-size: 66px">menu</i></a>
+    </div>
+    <div class="right hide-on-med-and-down">
+      <a href="./home.html"><i class="material-icons" style="font-size: 66px">search</i></a>
+    </div>
+  </div>
+  
+  <div class="title" style="position:relative;top:-7.5px">
+    <h4 id="res">Reserve Gym Equipment</h4>
+    <div class="dd">
+      <span>
+        <button onclick="dropdownActivate()" class="dbtn">Choose Equipment Type</button>
+        <div id="mydd" class="dd-content">
+          <a href="#" onclick="changeField(0)" id="first-op">Dumbell</a>
+          <a href="#" onclick="changeField(1)">Barbell</a>
+          <a href="#" onclick="changeField(2)" id="last-op">Treadmill</a>
+        </div>
+      <span>
+      <span>
+        <button class="dbtn" id="dbtn-arrow"><i class="material-icons" style="font-size: 50px" id="arr">expand_more</i></button>       
+      </span>
+    </div>
+    <p style="font-weight:bold">Choose Reservation Time</p>
+    <div>
+      <span style="font-size: 20.6px;">Date</span>
+      <span>
+        <input id="date_" placeholder="mm/dd/yyyy" type="date" class="browser-default">
+        </input>
+      </span>
+    </div>
+    <div id="time-select">
+      <span style="font-size: 20.6px;">From</span>
+      <span>
+        <input id="time_" placeholder="mm/dd/yyyy" type="time" class="browser-default">
+        </input>
+      </span>
+      <span style="font-size: 20.6px;margin-left:32px;">To</span>
+      <span>
+        <input id="time_" placeholder="mm/dd/yyyy" type="time" class="browser-default">
+        </input>
+      </span>
+    </div>
+    <button id="overviewbtn" onclick="confirmPopUp()" style="margin-top: 36px;">Confirm Reservation</button>
+
+  </div>
+
+  
+  <div class="sidebar">
+    <p>Current Reservations</p>
+    <p id="newres">Item xyz<br>Date mm/dd/yy<br>Time --:-- to --:--<p>
+  </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thor Gym Homepage</title>
+<link rel="stylesheet" href="home.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="home.js"></script>
+</head>
+<body>
+
+
+<div class="topnav">
+  <a class="active" href="./home.html"><img src="logo.png" width="66.5"></a>
+  <a class="active" href="./home.html">Thor <br> Fitness</a>
+  <div class="hide-on-med-and-down">
+    <a href="./reserve.html">Manage <br>Reservations </a>
+    <a href="./home.html">Merchandise<br> Catalogue</a>
+    <a href="./home.html">My <br>Orders</a>
+    <a href="./home.html">My <br>Profile</a>
+  </div>
+  <div class="right hide-on-large-only">
+    <a href="./home.html"><i class="material-icons" style="font-size: 66px">menu</i></a>
+  </div>
+  <div class="right hide-on-med-and-down">
+    <a href="./home.html"><i class="material-icons" style="font-size: 66px">search</i></a>
+  </div>
+</div>
+
+<div class="title" style="position:relative;top:-7.5px">
+  <h4 id="news">Latest News and Merchandise Offers!</h4>
+</div>
+<div class="title">
+  <h6>Brand New Large industrial Cieling Fans Have been installed at the Encinitas location!</h6>
+</div>
+
+<div class="sidebar">
+  <p>Current Reservations</p>
+</div>
+
+<div class="carousel-container">
+                      
+  <!-- Carousel Image -->
+  <div>
+    <img class = "carousel" id="0" src="https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png">
+  </div>
+
+  <button class="prev" onclick="changeImg(-1)">&#10094;</button>
+  <button class="next" onclick="changeImg(1)">&#10095;</button>
+</div>
+
+
+
+
+</body>
+</html>
