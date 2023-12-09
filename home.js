@@ -9,6 +9,7 @@ let captions = ["Brand New Large Industrial ceiling Fans Have been installed at 
     "New Boxing Section Comping Soon to the Carlsbad location!",
     "Check out our exciting Black Friday and Cyber Monday deals in the Merchandise Catalogue!"];
   
+    
 let len = imageURLs.length;
 let a = 0;
 
