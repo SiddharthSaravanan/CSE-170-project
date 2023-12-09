@@ -12,15 +12,15 @@ function dropdownActivate() {
         document.getElementById("arr").innerHTML = "expand_more";
     }
 }
-// Close the dropdown menu if the user clicks outside of it
+
 window.onclick = function(event) {
     if (!event.target.matches('.dbtn')) {
-        let dropdowns = document.getElementsByClassName("dd-content");
+        let dds = document.getElementsByClassName("dd-content");
         let i;
-        for (i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+        for (i = 0; i < dds.length; i++) {
+            let opendd = dds[i];
+            if (opendd.classList.contains('show')) {
+                opendd.classList.remove('show');
                 document.getElementById("arr").innerHTML = "expand_more";
             }
         }
