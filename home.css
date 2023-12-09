@@ -11,6 +11,7 @@ body{
 }
 
 #news{
+    padding-top: 23.5px;
     font-weight: bold;
 }
 
@@ -32,7 +33,7 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.4s ease;
 }
   
@@ -46,56 +47,31 @@ body{
 .topnav a.active {
     background-color: #ff8552;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
 }
 .topnav img.active {
     background-color: #ff8552;
     color: black;
 }
 
-.sidebar {
-    height: 100%;
-    width: 218.5px;
-    position: fixed;
-    z-index: 0;
-    top: 103px;
-    left: 0;
-    background-color: #d9d9d9;
-    overflow-x: hidden;
-    padding-top: 20px;
-    border-right: 1px solid;
-    border-top: 1px solid;
-}
-
-.sidebar p {
-    /* padding: 6px 8px 6px 16px; */
-    text-decoration: none;
-    font-size: 20.6px;
-    color: #000000;
-    position:relative;
-    top:-20px;
-    border-bottom: 1px solid;
-    /* display: block; */
-}
-
-
 @media screen and (max-height: 450px) {
-.sidebar {padding-top: 15px;}
-.sidebar a {font-size: 18px;}
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
 }
 
 .title{
-    margin-left: 235px;
+    margin-top: 30px;
+    margin-left: 41px;
 }
+
 
 .carousel-container {
     max-width: 100%;
     position: relative;
-    margin-left: 235px;
-    margin-right: 140px;
+    margin-right: 41px;
     /* z-index: -1; */
     margin-bottom: 100px;
-  }
+}
   
 .carousel {
     width:100%;
