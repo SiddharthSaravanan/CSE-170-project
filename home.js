@@ -5,11 +5,10 @@ let imageURLs = [
     "https://i0.wp.com/asmanyreviewsaspossible.com/wp-content/uploads/2020/11/image.png?fit=840%2C493&ssl=1"  
       ];
 
-let captions = ["Brand New Large industrial Cieling Fans Have been installed at the Encinitas location!",
+let captions = ["Brand New Large Industrial ceiling Fans Have been installed at the Encinitas location!",
     "New Boxing Section Comping Soon to the Carlsbad location!",
     "Check out our exciting Black Friday and Cyber Monday deals in the Merchandise Catalogue!"];
   
-    
 let len = imageURLs.length;
 let a = 0;
 
