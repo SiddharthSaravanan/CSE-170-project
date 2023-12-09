@@ -11,29 +11,29 @@
 
 
   <div class="topnav">
-    <a class="active" href="./home.html"><img src="logo.png" width="66.5"></a>
-    <a class="active" href="./home.html">Thor <br> Fitness</a>
+    <a class="active" href="./home.html"><img src="https://i.imgur.com/ITyKvbU_d.webp?maxwidth=760&fidelity=grand" width="52.5"></a>
+    <a class="active" style="text-align:right;" href="./home.html">Thor <br> Fitness</a>
     <div class="hide-on-med-and-down">
       <a href="./reserve.html">Manage <br>Reservations </a>
-      <a href="./home.html">Merchandise<br> Catalogue</a>
-      <a href="./home.html">My <br>Orders</a>
-      <a href="./home.html">My <br>Profile</a>
+      <a href="https://www.wikipedia.org/">Merchandise<br> Catalogue</a>
+      <a href="https://www.wikipedia.org/">My <br>Orders</a>
+      <a href="https://www.wikipedia.org/">My <br>Profile</a>
     </div>
     <div class="right hide-on-large-only">
-      <a href="./home.html"><i class="material-icons" style="font-size: 66px">menu</i></a>
+      <a href="https://www.wikipedia.org/"><i class="material-icons" style="font-size: 52px">menu</i></a>
     </div>
     <div class="right hide-on-med-and-down">
-      <a href="./home.html"><i class="material-icons" style="font-size: 66px">search</i></a>
+      <a href="https://www.wikipedia.org/"><i class="material-icons" style="font-size: 52px">search</i></a>
     </div>
   </div>
   
   <div class="title" style="position:relative;top:-7.5px">
     <h4 id="res">Reserve Gym Equipment</h4>
-    <div class="dd">
+    <div class="dd" style="margin-top:25px">
       <span>
         <button onclick="dropdownActivate()" class="dbtn">Choose Equipment Type</button>
         <div id="mydd" class="dd-content">
-          <a href="#" onclick="changeField(0)" id="first-op">Dumbell</a>
+          <a href="#" onclick="changeField(0)" id="first-op">Dumbbell</a>
           <a href="#" onclick="changeField(1)">Barbell</a>
           <a href="#" onclick="changeField(2)" id="last-op">Treadmill</a>
         </div>
@@ -41,39 +41,38 @@
       <span>
         <button class="dbtn" id="dbtn-arrow"><i class="material-icons" style="font-size: 50px" id="arr">expand_more</i></button>       
       </span>
-    </div>
-    <p style="font-weight:bold">Choose Reservation Time</p>
-    <div>
-      <span style="font-size: 20.6px;">Date</span>
+      <div style="font-size: 20.6px; margin-top:25px; margin-bottom:5px;">Date</div>
       <span>
-        <input id="date_" placeholder="mm/dd/yyyy" type="date" class="browser-default">
+        <input id="date_" placeholder="mm/dd/yyyy" type="date" class="browser-default" onchange="showAvlbTimes()">
         </input>
       </span>
     </div>
-    <div id="time-select">
-      <span style="font-size: 20.6px;">From</span>
-      <span>
-        <input id="time_" placeholder="mm/dd/yyyy" type="time" class="browser-default">
-        </input>
-      </span>
-      <span style="font-size: 20.6px;margin-left:32px;">To</span>
-      <span>
-        <input id="time_" placeholder="mm/dd/yyyy" type="time" class="browser-default">
-        </input>
-      </span>
+    
+    <div class="avlb-times" style="margin-top:20px">
+      <div class="avlb-times">
+        <p>Available Times</p>
+      </div>
+      <div style="margin-top:-50px;">
+        <span class="avlb-times">
+          <button class="timebtn" onclick="highlight(0)" style="margin-top: 36px;">7:00 AM - 7:30 AM</button>
+          <button class="timebtn" onclick="highlight(1)" style="margin-top: 36px;">5:30 PM - 6:00 PM</button>
+        </span>
+      </div>
     </div>
-    <button id="overviewbtn" onclick="confirmPopUp()" style="margin-top: 36px;">Confirm Reservation</button>
+
+    
+    <div style="margin-bottom:50px;">
+      <button id="overviewbtn" onclick="confirmPopUp()" style="margin-top: 36px;">Confirm Reservation</button>
+      <div style="margin-top: 5px;">*Note that failure to show up to your reservation may affect the ability to make future reservations.</div>
+    </div>
 
   </div>
 
   
   <div class="sidebar">
     <p>Current Reservations</p>
-    <p id="newres">Item xyz<br>Date mm/dd/yy<br>Time --:-- to --:--<p>
+    <p id="newres">Item xyz<br>Date mm/dd/yy<br>Time -:- to -:-<p>
   </div>
-
-
-
 
 
 </body>
